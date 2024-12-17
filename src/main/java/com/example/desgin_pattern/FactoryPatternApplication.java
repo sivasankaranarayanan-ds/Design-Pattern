@@ -11,6 +11,8 @@ public class FactoryPatternApplication {
     public static void main(String[] args) {
 		ApplicationContext context =  SpringApplication.run(FactoryPatternApplication.class, args);
         System.out.println("--------------------");
+        System.out.println("Factory Pattern");
+        System.out.println("--------------------");
         // Factory Pattern
         ShapeService shapeService = context.getBean(ShapeService.class);
         shapeService.drawShape("CIRCLE");
